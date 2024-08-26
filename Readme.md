@@ -2,7 +2,7 @@
 
 * Студент: [Екатерина Склярова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1699507).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт: [Мой проект Седона](https://ekaterinasky.github.io/1699507-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
