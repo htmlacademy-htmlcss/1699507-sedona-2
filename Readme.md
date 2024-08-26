@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Склярова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1699507).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
