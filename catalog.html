@@ -7,19 +7,19 @@
 </head>
 <body>
   <header class="page-header">
-    <a href="index.html" class="navigation-logo">
-      <img class="logo" src="#" alt="Логотип Седона">
-    </a>
     <nav class="navigation">
+      <a href="index.html" class="navigation-logo">
+        <img class="logo" src="#" alt="Логотип Седона">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
@@ -49,7 +49,6 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html" class="breadcrumbs-link">
-            <span></span>
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -112,7 +111,6 @@
           <input type="number" name="price" value="0" id="catalog-filter-price">
           <label for="catalog-filter-price-befor">До</label>
           <input type="number" name="price" value="9000" id="catalog-filter-price-befor">
-          <input type="range" id="volume" name="volume" min="0" max="100" value="80">
         </fieldset>
         <input class="button" type="submit" value="Применить">
        <input class="button-reset" type="reset">
@@ -146,10 +144,12 @@
         <span class="product-card-price">От <b>4000</b>₽:</span>
         <a href="#" class="button">Подробнее</a>
         <button class="button-favourites">В избранное</button>
-        <span class="product-cart-stars-rating visually-hidden">Звёзды рейтинга</span>
-        <span class="product-cart-rating">Рейтинг:
+        <div class="product-cart-stars-rating">
+        <span class="visually-hidden">Количество звёзд</span>
+        </div>
+        <p class="product-cart-rating">Рейтинг:
           <span>8,5</span>
-        </span>
+        </p>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
@@ -162,10 +162,12 @@
         <span class="product-card-price">От <b>5000</b>₽</span>
         <a href="#" class="button">Подробнее</a>
         <button class="button-favourites">В избранное</button>
-        <span class="product-cart-stars-rating visually-hidden">Звёзды рейтинга</span>
-        <span class="product-cart-rating">Рейтинг:
+        <div class="product-cart-stars-rating">
+          <span class="visually-hidden">Количество звёзд</span>
+          </div>
+        <p class="product-cart-rating">Рейтинг:
           <span>9,2</span>
-        </span>
+        </p>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
@@ -178,10 +180,12 @@
         <span class="product-card-price">От <b>2500</b>₽</span>
         <a href="#" class="button">Подробнее</a>
         <button class="button-favourites">В избранное</button>
-        <span class="product-cart-stars-rating visually-hidden">Звёзды рейтинга</span>
-        <span class="product-cart-rating">Рейтинг:
+        <div class="product-cart-stars-rating">
+          <span class="visually-hidden">Количество звёзд</span>
+          </div>
+        <p class="product-cart-rating">Рейтинг:
           <span>6,9</span>
-        </span>
+        </p>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
@@ -194,10 +198,12 @@
         <span class="product-card-price">От <b>1500</b>₽</span>
         <a href="#" class="button">Подробнее</a>
         <button class="button-favourites">В избранное</button>
-        <span class="product-cart-stars-rating visually-hidden">Звёзды рейтинга</span>
-        <span class="product-cart-rating">Рейтинг:
+        <div class="product-cart-stars-rating">
+          <span class="visually-hidden">Количество звёзд</span>
+          </div>
+        <p class="product-cart-rating">Рейтинг:
           <span>5,0</span>
-        </span>
+        </p>
       </li>
       </ul>
 
@@ -231,8 +237,7 @@
         <label for="newsletter-email">Email</label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
           required>
-        <button class="button newsletter-button" type="submit">
-          <span class="newsletter-form-description">Подписаться</span>
+        <button class="button newsletter-button" type="submit">Подписаться
         </button>
       </form>
     </section>
