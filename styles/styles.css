@@ -22,8 +22,6 @@ body {
   background: rgb(242, 242, 242);
 }
 
-/* Pages */
-
 .page-header {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
@@ -42,23 +40,43 @@ body {
 .main-page-welcome {
   color: rgb(51, 51, 51);
   background-color: rgb(255, 255, 255);
-  background-image: url("../images/images-index/main-background.svg"), url("../images/images-index/index-background.jpg");
-  /* background-size: 1200px auto; */
+  background-image: url("../images/images-index/welcome.svg"),url("../images/images-index/main-background.svg"), url("../images/images-index/index-background.jpg");
   height: 485px;
   width: 1200px;
   background-repeat: no-repeat;
-  background-position: bottom;
-
+  background-position: center, bottom;
 }
 
+.main-index {
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
 
-/* List */
+.index-welcome-rows {
+  width: 651px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.page-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
 
 .advantages-list {
   text-align: center;
 }
-
-/* Title */
 
 .advantages-title {
   font-size: 24px;
