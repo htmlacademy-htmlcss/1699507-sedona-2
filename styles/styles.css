@@ -238,7 +238,7 @@ body {
   background-color: #333333;
   color: #ffffff;
   background-image: url("../images/images-catalog/index-catalog-background.jpg");
-  background-size: 100% auto, cover;
+  background-size: cover;
   background-repeat: no-repeat
 }
 
@@ -333,7 +333,7 @@ color: #000000;
   color: #ffffff;
   background: #333333;
   background-image: url("../images/images-index/index-footer.jpg");
-  background-size: 100% auto, cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
