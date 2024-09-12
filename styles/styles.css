@@ -234,6 +234,7 @@ body {
 }
 
 .catalog-products-light {
+  padding-bottom: 45px;
   background-color: #333333;
   color: #ffffff;
   background-image: url("../images/images-catalog/index-catalog-background.jpg");
@@ -247,6 +248,8 @@ body {
 }
 
 .inner-header-title {
+  margin: 0;
+  padding-top: 35px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -255,14 +258,21 @@ body {
 
 .filter-button {
   font-family: inherit;
-  background-color: #82b3d3;
+  background: transparent;
   border: none;
 }
 
-.button-reset {
-  font-family: inherit;
-  background: transparent;
-  border: none;
+.filter-button-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .inherit-text[value] {
@@ -389,3 +399,15 @@ color: #000000;
   color: #000000;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+}
+.pagination-item {
+  margin-left: 10px;
+}
