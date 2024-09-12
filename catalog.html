@@ -7,7 +7,6 @@
   <title>Каталог гостиниц</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <div class="container">
     <header class="page-header">
@@ -47,7 +46,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <section class="catalog-products catalog-products-light">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -111,13 +110,13 @@
           </fieldset>
           <fieldset class="catalog-filter-group-cost">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label for="catalog-filter-price">От</label>
-            <input type="number" name="price" value="0" id="catalog-filter-price">
+            <label class="inherit-text" for="catalog-filter-price">От</label>
+            <input class="inherit-text" type="number" name="price" value="0" id="catalog-filter-price">
             <label for="catalog-filter-price-befor">До</label>
-            <input type="number" name="price" value="9000" id="catalog-filter-price-befor">
+            <input class="inherit-text" type="number" name="price" value="9000" id="catalog-filter-price-befor">
           </fieldset>
-          <input class="navigation-link-button filter-button" type="submit" value="Применить">
-          <input class="navigation-link-button button-reset" type="reset">
+          <button class="navigation-link-button filter-button" type="submit">Применить
+          <button class="navigation-link-button button-reset" type="reset">Сбросить
         </form>
       </section>
       <section class="hotel">
@@ -143,7 +142,7 @@
               <img src="images/images-catalog/hotel-amara-resort-and-spa.jpg" alt="Гостиница Amara Resort and Spa"
                 width="300" height="212">
             </a>
-            <a href="#">
+            <a class="adventages-user-link" href="#">
               <h3 class="advantages-user-title product-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="producrt-card-description">Гостиница</p>
@@ -162,7 +161,7 @@
               <img src="images/images-catalog/hotel-villas-at-poco-diablo.jpg" alt="Гостиница Villas at Poco Diablo"
                 width="300" height="212">
             </a>
-            <a href="#">
+            <a class="adventages-user-link" href="#">
               <h3 class="advantages-user-title product-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="producrt-card-description">Гостиница</p>
@@ -181,7 +180,7 @@
               <img src="images/images-catalog/hotel-desert-quail-inn.jpg" alt="Гостиница Desert Quail Inn" width="300"
                 height="212">
             </a>
-            <a href="#">
+            <a class="adventages-user-link" href="#">
               <h3 class="advantages-user-title product-card-title">Desert Quail Inn</h3>
             </a>
             <p class="producrt-card-description">Гостиница</p>
@@ -200,7 +199,7 @@
               <img src="images/images-catalog/hotel-gree-tree-inn.jpg" alt="Гостиница GreenTree Inn" width="300"
                 height="212">
             </a>
-            <a href="#">
+            <a class="adventages-user-link" href="#">
               <h3 class="advantages-user-title product-card-title">GreenTree Inn</h3>
             </a>
             <p class="producrt-card-description">Гостиница</p>
@@ -240,7 +239,7 @@
     <footer class="page-footer">
       <section class="page-footer-newsletter">
         <div class="index-welcome-rows index-welcome-rows-subscribe">
-          <h2 class="page-footer-title welcome-title welcome-title-light">Подпишитесь на рассылку</h2>
+          <h2 class="page-footer-title welcome-title welcome-title-dark ">Подпишитесь на рассылку</h2>
           <p class="page-footer-description page-description">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
         </div>
