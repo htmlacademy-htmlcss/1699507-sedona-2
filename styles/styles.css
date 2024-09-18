@@ -25,10 +25,22 @@ body {
   background-color: #f2f2f2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
 }
-
 
 .container {
   display: flex;
@@ -40,6 +52,7 @@ body {
 }
 
 .page-header {
+  padding: 0 70px;
   color: rgb(0, 0, 0);
   background: #ffffff;
 }
@@ -47,13 +60,15 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+  column-gap: 30px;
 }
 
 .navigation-list {
-  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -61,7 +76,14 @@ body {
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 20px;
+}
+
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -159,7 +181,7 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  list-style-type: none;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -222,8 +244,7 @@ body {
 .advantages-user-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -298,6 +319,8 @@ body {
   color: #000000;
   padding-top: 50px;
   padding-bottom: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .inner-header-title {
@@ -332,23 +355,17 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   gap: 20px;
-  width: 1200px;
 }
 
 .product-card {
   width: 300px;
   min-height: 438px;
   padding: 20px;
-  border: 1px solid rgb(230, 230, 230);
+  box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
   border-radius: 4px;
-
-}
-
-.product-list-wrapper {
-  padding: 0 70px;
 }
 
 .inherit-text[value] {
@@ -372,14 +389,18 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 70px;
+  margin-right: 200px;
 }
 
 .hotel-catalog-filter-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* width: 522px; */
   margin-bottom: 40px;
+}
+
+.hotel-catalog-filter-wrapper .button {
+  width: 48px;
+  height: 48px;
 }
 
 .control-input {
@@ -387,6 +408,8 @@ body {
 }
 
 .select-filter {
+  margin-right: 70px;
+  width: 292px;
   font-family: inherit;
   background-color: #ffffff;
   font-size: 18px;
@@ -447,11 +470,23 @@ color: #000000;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px;
+  min-width: 60px;
+  min-height: 60px;
   background-color: #82b3d3;
   color: #ffffff;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  border-radius: 4px;
+}
+
+.pagination-link-dots {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination-link-active {
@@ -476,10 +511,6 @@ color: #000000;
   color: inherit;
 }
 
-.product-card-title {
-  text-transform: none;
-}
-
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -500,16 +531,6 @@ color: #000000;
 
 .catalog-filter {
   display: flex;
-  justify-content: space-around;
-}
-
-.pagination {
-  display: flex;
-  list-style: none;
-}
-
-.pagination-item {
-  margin-left: 8px;
 }
 
 .page-footer-newsletter {
@@ -541,7 +562,12 @@ color: #000000;
 }
 
 .product-card-title {
+  text-transform: none;
   margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.product-card-link {
   margin-bottom: 16px;
 }
 
@@ -558,8 +584,64 @@ color: #000000;
   margin-bottom: 16px;
 }
 
-.pagination {
-  padding-top: 40px;
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
+.social-item {
+  width: 48px;
+  height: 40px;
+  background-color: #808080;
+}
 
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 28px;
+  color: inherit;
+}
+
+.pagination-wrapper {
+  display: flex;
+  padding: 16px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.advantages-image {
+  display: block;
+  object-fit: contain;
+  margin: auto;
+}
+
+.button-light {
+  background-color: #808080;
+}
+
+.button-light:not(:last-child) {
+  margin-right: 8px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
