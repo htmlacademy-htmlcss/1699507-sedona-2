@@ -41,7 +41,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
+            <a class="navigation-link navigation-link-button navigation-link-button-nav" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -130,15 +130,23 @@
           <option value="chep">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button button-light catalog-view-selected">
+        <ul class="button-light-list">
+        <li class="button-light-item">
+        <a href="#" class="button catalog-view-selected">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="#" class="button button-light">
+      </li>
+      <li class="button-light-item">
+        <a href="#" class="button">
           <span class="visually-hidden">Показать одну карточку</span>
         </a>
-        <a href="#" class="button button-light">
+      </li>
+      <li class="button-light-item">
+        <a href="#" class="button">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </li>
+      </ul>
       </div>
         <ul class="product-list">
           <li class="product-card">
@@ -266,8 +274,8 @@
             бойскаутское!</p>
         </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          <label for="newsletter-email" class="visually-hidden">Укажите ваш Email</label>
+          <input class="field field-dark" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
