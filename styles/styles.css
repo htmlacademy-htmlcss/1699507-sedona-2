@@ -118,12 +118,30 @@ body {
 .product-button-medium {
   border: none;
   background-color: #82b3d3;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.product-card-price {
+  margin-left: auto;
 }
 
 .product-cart-rating {
+  margin: 0;
   font-weight: 400;
   color:#333333;
   background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+}
+
+.navigation-link-button-accent {
+  text-align: center;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .main-page-welcome {
@@ -296,6 +314,7 @@ body {
 }
 
 .adventages-user-link {
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
@@ -356,8 +375,8 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -365,11 +384,18 @@ body {
 }
 
 .product-card {
-  width: 300px;
-  min-height: 438px;
+  background-color: #ffffff;
+  display: grid;
   padding: 20px;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
   box-shadow: 0 0 10px rgb(230, 230, 230);
   border-radius: 4px;
+  grid-template-rows: 1fr;
+}
+
+.product-card-link {
+  grid-column: 1 / -1;
 }
 
 .inherit-text[value] {
@@ -575,35 +601,13 @@ color: #000000;
   margin: 0 auto;
 }
 
-.adventages-user-link {
-  margin-bottom: 16px;
-}
-
 .producrt-card-description {
   margin: 0;
 }
 
 .product-card-title {
   text-transform: none;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.product-card-link {
-  margin-bottom: 16px;
-}
-
-.producrt-card-text-wrapper{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.navigation-link-button-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .social-list {
@@ -685,3 +689,7 @@ color: #000000;
   background-color: #756157;
 }
 
+.product-card-img {
+  display: block;
+  object-fit: contain;
+}
