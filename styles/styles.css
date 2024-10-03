@@ -89,6 +89,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
@@ -100,8 +101,19 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-hover:hover::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  right: 15px;
+  left: 15px;
+  bottom: -5px;
+}
+
 .navigation-link-button {
-  color:#ffffff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -116,20 +128,33 @@ body {
 }
 
 .product-button-medium {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   border: none;
   background-color: #82b3d3;
   height: 36px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .product-card-price {
   margin-left: auto;
 }
 
+.pagination-item {
+  cursor: pointer;
+}
+
+.pagination-link:hover:not(.pagination-link-active, .pagination-link-dots) {
+  color:#82b3d3;
+  background-color: #ffffff;
+  outline: 1px solid #82b3d3;
+}
+
 .product-cart-rating {
   margin: 0;
   font-weight: 400;
-  color:#333333;
+  color: #333333;
   background-color: #f2f2f2;
   text-align: center;
   padding-top: 8px;
@@ -146,7 +171,7 @@ body {
 
 .main-page-welcome {
   color: #ffffff;
-  background-color:  #333333;
+  background-color: #333333;
   background-image: url("../images/images-index/main-background.svg"), url("../images/images-index/index-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -162,7 +187,7 @@ body {
 
 .main-index {
   color: #333333;
-  background-color:  #ffffff;
+  background-color: #ffffff;
 }
 
 .index-welcome-rows {
@@ -199,8 +224,6 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
-/* Секция преимущества */
 
 .advantages-list {
   display: grid;
@@ -263,8 +286,6 @@ body {
   margin: 0 auto;
 }
 
-/* Конец секции преимущества */
-
 .welcome-title-advantages-user {
   margin-bottom: 20px;
 }
@@ -277,13 +298,10 @@ body {
 }
 
 .advantages-user-item {
+  display: block;
   min-height: 385px;
   width: 400px;
-}
-
-.advantages-user-item-advantages-user {
   text-align: center;
-  padding: 80px 85px;
 }
 
 .advantages-user-title {
@@ -294,6 +312,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 80px;
 }
 
 .welcome-title-search {
@@ -312,11 +331,15 @@ body {
 .advantages-description {
   margin: 0;
 }
+
 .advantages-user-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   margin: 0;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 80px;
 }
 
 .adventages-user-link {
@@ -354,13 +377,18 @@ body {
   color: inherit;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .filter-button {
   font-family: inherit;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
-.filter-button-wrapper{
+.filter-button-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -373,6 +401,7 @@ body {
   text-align: center;
   width: 190px;
   min-height: 36px;
+  cursor: pointer;
 }
 
 .product-list {
@@ -390,9 +419,9 @@ body {
   padding: 20px;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
-  box-shadow: 0 0 10px rgb(230, 230, 230);
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
-  grid-template-rows: 1fr;
+  grid-template-rows: min-content 1fr auto;
 }
 
 .product-card-link {
@@ -413,7 +442,7 @@ body {
   color: inherit;
 }
 
-.catalog-filter-title-dark{
+.catalog-filter-title-dark {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -480,11 +509,11 @@ body {
 }
 
 .main-inner-light {
-background-color: #ffffff;
-color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.page-footer{
+.page-footer {
   background-color: #ffffff;
   color: #000000;
 }
@@ -622,7 +651,7 @@ color: #000000;
 .social-item {
   width: 48px;
   height: 40px;
-  background-color: #756157;
+  cursor: pointer;
 }
 
 .breadcrumbs {
@@ -682,9 +711,106 @@ color: #000000;
   width: 48px;
   height: 48px;
   background-color: #756157;
+  cursor: pointer;
 }
 
 .product-card-img {
   display: block;
   object-fit: contain;
+}
+
+.advantages-user-title-icon::before {
+  content: " ";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-user-title-home::before {
+  background-image: url("../images/images-decorat/home.svg");
+}
+
+.advantages-user-title-food::before {
+  background-image: url("../images/images-decorat/food.svg");
+}
+
+.advantages-user-title-souvenir::before {
+  background-image: url("../images/images-decorat/souvenir.svg");
+}
+
+.star {
+  width: 120px;
+  height: 17px;
+  padding-top: 10px;
+}
+
+.star::before {
+  content: " ";
+  display: block;
+  height: 17px;
+  background-image: url("../images/images-decorat/star.svg");
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.star-4 {
+  width: 87px;
+}
+
+.star-3 {
+  width: 67px;
+}
+
+.star-2 {
+  width: 40px;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/images-decorat/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  background-image: url("../images/images-decorat/favourites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.likes-number::after {
+  position: absolute;
+  display: block;
+  content: "12";
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 6px;
+
+}
+
+.social-item-vk{
+  background-image: url("../images/images-decorat/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item-telegram{
+  background-image: url("../images/images-decorat/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item-youtube {
+  background-image: url("../images/images-decorat/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
