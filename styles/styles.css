@@ -103,7 +103,7 @@ body {
   text-decoration: none;
 }
 
-.navigation-link-hover::after {
+.navigation-link-hover:active:after {
   position: absolute;
   display: block;
   content: "";
@@ -525,6 +525,7 @@ body {
 }
 
 .select-filter {
+  display: block;
   margin-right: 70px;
   width: 292px;
   font-family: inherit;
@@ -536,13 +537,14 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding-left: 20px;
-  display: block;
+  padding-right: 48px;
+  background-image: url("../images/images-decorat/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
-.select-filter:hover {
-  border:2px solid #68a2ca;
-}
-
+.select-filter:hover,
 .select-filter:focus-visible {
   border:2px solid #68a2ca;
 }
@@ -655,9 +657,10 @@ body {
 }
 
 .button-social {
+  display: block;
   text-decoration: none;
   color: inherit;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .contacts-phone {
@@ -1099,6 +1102,7 @@ body {
 
 .breadcrumbs-link-navigation-icon {
   text-decoration: none;
+  cursor: auto;
 }
 
 .breadcrumbs-link-navigation-icon::before {
@@ -1114,4 +1118,73 @@ body {
   top: 2px;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 46px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: #cfdde9;
+}
+
+.control:focus-visible .control-mark {
+  outline: 3px solid #83b3d3;
+  border-radius: 5px;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: #a2bad5;
+}
 

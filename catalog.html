@@ -68,8 +68,12 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="controle-label">Бассейн</span>
+
+
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -115,6 +119,16 @@
             <input class="inherit-text" type="number" name="price" value="0" id="catalog-filter-price">
             <label class="inherit-text-before" for="catalog-filter-price-befor">до</label>
             <input class="inherit-text inherit-text-price-before" type="number" name="price" value="9000" id="catalog-filter-price-befor">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
           </fieldset>
           <div class="filter-button-wrapper">
           <button class="navigation-link-button filter-button-light button-light-decorate" type="submit">Применить</button>
@@ -295,5 +309,4 @@
     </footer>
   </div>
 </body>
-
 </html>
