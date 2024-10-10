@@ -11,7 +11,7 @@
   <div class="container main-container">
     <header class="page-header">
       <nav class="navigation">
-        <a href="index.html" class="navigation-logo" aria-current="page">
+        <a href="index.html" class="navigation-logo" >
           <img class="logo" src="images/images-index/logo.svg" alt="Логотип сайта города Седона" width="140"
             height="70">
         </a>
@@ -37,7 +37,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранные гостиницы</span>
-              <span class="likes-number"></span>
+              <span class="likes-number">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -163,6 +163,46 @@
         </section>
       </footer>
     </main>
+  </div>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-order">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="order-form " action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group field-group-visited">
+            <label class="order-form-date-visit order-title" for="auth-login">Дата заезда:</label>
+            <input class="order-form-field" type="text" id="order-login" name="order-visit" value="27 апреля 2020" required>
+            <span class="view-calendar"></span>
+          </p>
+          <span class="order-form-text-visit">Мы не можем отправить вас в прошлое.</span>
+          <p class="field-group field-group-visited">
+            <label class="order-form-date-visit order-title" for="order-departure">Дата выезда:</label>
+            <input class="order-form-field" type="text" id="order-departure" name="order-departure" value="01 сентября 2023" required>
+            <span class="view-calendar"></span>
+          </p>
+          <span class="order-form-text-departure">На эти даты есть свободные номера. Пока есть.</span>
+          <p class="field-group field-group-order">
+            <label class="order-form-adults order-title" for="order-departure">Взрослые:</label>
+            <input class="order-form-field order-form-people" type="number" id="order-adults" name="order-adults" value="2">
+            <label class="order-form-children order-title" for="order-children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+            <span class="min"></span>
+            <input class="order-form-field order-form-people" type="number" id="order-children" name="order-children" value="2">
+            <span class="max"></span>
+          </p>
+          <button class="newsletter-button order-for-button">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
