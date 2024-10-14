@@ -993,7 +993,6 @@ body {
   height: 33px;
   background-color: #000000;
   -webkit-mask-image: url("../images/images-index/logo_htmlacademy.svg");
-  mask-image: url("../images/images-index/logo_htmlacademy.svg");
   -webkit-mask-size: 114px 33px;
   mask-size: 114px 33px;
 }
