@@ -170,15 +170,18 @@ body {
   cursor: pointer;
 }
 
-.pagination-link:hover:not(.pagination-link-active, .pagination-link-dots) {
+.pagination-link:hover:not(.pagination-link-active,
+.pagination-link-dots) {
   background-color: #68a2ca;
 }
 
-.pagination-link:focus-visible:not(.pagination-link-active, .pagination-link-dots) {
+.pagination-link:focus-visible:not(.pagination-link-active,
+.pagination-link-dots) {
   background-color: #68a2ca;
 }
 
-.pagination-link:active:not(.pagination-link-active, .pagination-link-dots) {
+.pagination-link:active:not(.pagination-link-active,
+.pagination-link-dots) {
   color: #a8cae0;
 }
 
