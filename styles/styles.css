@@ -523,7 +523,7 @@ body {
 }
 
 .filter-button-light {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   border: none;
   background-color: #82b3d3;
   text-align: center;
@@ -1023,14 +1023,14 @@ body {
   width: 40px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-user .navigation-item:nth-child(1) {
   background-image: url("../images/images-decorat/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-position: 3px 20px;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-user .navigation-item:nth-child(2) {
   background-image: url("../images/images-decorat/favourites.svg");
   background-repeat: no-repeat;
   background-position: center;
