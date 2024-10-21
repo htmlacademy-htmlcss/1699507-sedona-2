@@ -339,7 +339,7 @@ body {
 
 .advantage-description-dark {
   color: #333333;
-  margin-left: -7px;
+  margin-left: -2px;
 }
 
 .text-middle {
@@ -816,6 +816,7 @@ body {
   color: #000000;
   text-decoration: none;
   margin-top: 5px;
+  width: 331px;
 }
 
 .welcome-title-dark {
@@ -918,6 +919,7 @@ body {
   padding-top: 80px;
   gap: 8px;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .button-light:not(:last-child) {
@@ -1496,6 +1498,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 4px;
 }
 
 .field-group-visit {
@@ -1799,8 +1802,12 @@ body {
   margin-bottom: 55px;
 }
 
-input[type=number] {
+.inherit-text[type=number] {
   -moz-appearance: textfield;
+}
+
+.range-toggle:hover {
+  outline: 2px solid #83b3d3;
 }
 
 .product-card-link:focus-visible,
