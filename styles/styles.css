@@ -277,10 +277,6 @@ body {
   text-align: center;
 }
 
-.advantages-item-dark {
-  background-color: #82b3d3;
-}
-
 .advantages-item-images-wrapper {
   grid-column: 1 / -1;
   display: -webkit-box;
@@ -370,14 +366,6 @@ body {
 
 .advantages-item-text-wrapper-mddle {
   margin-top: 9px;
-}
-
-.advantages-item-light {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-medium {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-image {
@@ -1388,7 +1376,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background: rgba(242, 242, 242, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
@@ -1396,10 +1384,7 @@ body {
           box-sizing: border-box;
   position: relative;
   margin: auto;
-  padding-top: 59px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 64px;
+  padding: 64px 70px 64px 70px;
   background-color: #ffffff;
 }
 
@@ -1436,7 +1421,7 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 56px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -1444,10 +1429,6 @@ body {
   color: #000000;
   text-transform: uppercase;
   width: 414px;
-}
-
-.order-form .field-group {
-  margin: 0;
 }
 
 .order-form {
@@ -1468,10 +1449,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-.order-form-date-visit {
-  margin-top: 13px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
 }
 
 .order-title {
@@ -1482,6 +1462,7 @@ body {
   margin-right: 20px;
   font-size: 19px;
   line-height: 24px;
+  margin-top: 17px;
 }
 
 .order-form-field {
@@ -1499,6 +1480,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 4px;
+  position: relative;
+  top: 6px;
 }
 
 .field-group-visit {
@@ -1506,32 +1489,35 @@ body {
 }
 
 .order-form-text-visit {
+  position: absolute;
   display: block;
   color: #ff5757;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 26px;
+  margin-bottom: 21px;
   padding-left: 157px;
+  top: 215px;
 }
 
 .order-form-text-departure {
+  position: absolute;
   display: block;
   font-size: 16px;
   line-height: 21px;
   margin-left: 157px;
-  margin-bottom: 26px;
-  margin-top: 5px;
+  margin-bottom: 21px;
+  top: 310px;
 }
 
 .order-form-children {
   margin-left: 87px;
   margin-right: 86px;
-  margin-top: 15px;
+  margin-top: 9px;
 }
 
 .order-form-adults {
   margin-right: 51px;
-  margin-top: 15px;
+  margin-top: 9px;
 }
 
 .order-for-button {
@@ -1559,7 +1545,7 @@ body {
 .tooltip-toggle {
   position: absolute;
   left: 460px;
-  top: 2px;
+  top: -2px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -1603,9 +1589,9 @@ body {
   display: block;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .button-light-item-first-element {
   outline: 2px solid #000000;
@@ -1631,11 +1617,13 @@ body {
   background-color: #e5e5e5;
 }
 
+
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("../images/images-decorat/check_filter.svg");
+  position: absolute;
+  background-image: url("../images/images-decorat/check-filter.svg");
+  background-size: 13px 10px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 4px;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -1653,7 +1641,7 @@ body {
   position: absolute;
   background-image: url("../images/images-decorat/calendar.svg");
   right: 22px;
-  top: 16px;
+  top: 24px;
   bottom: 16px;
   width: 16px;
   height: 15px;
@@ -1716,7 +1704,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: -5px;
 }
 
 .count-people-wrapper {
@@ -1809,6 +1796,23 @@ body {
 .range-toggle:hover {
   outline: 2px solid #83b3d3;
 }
+
+.advantages-list li:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list .advantages-item-dark {
+  background-color: #82b3d3;
+}
+
+.advantages-user-list li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 
 .product-card-link:focus-visible,
 .adventages-user-link:focus-visible,
